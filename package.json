@@ -1,0 +1,12 @@
+{
+  "name": "msgimporter",
+  "version": "0.0.1",
+  "dependencies": {
+    "commander": "latest",
+    "uppercase-core": "latest"
+  },
+  "main": "index.js",
+  "bin": {
+    "msgimporter": "./program.js"
+  }
+}
