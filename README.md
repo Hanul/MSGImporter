@@ -8,7 +8,7 @@ npm install msgimporter -g
 
 ## 사용법
 ```
-msgimporter {{폴더 경로}} {{번역 파일 경로}}
+msgimporter {{폴더 경로}} {{번역 파일 경로}} {{CVS 열 별 언어 코드 들}}
 ```
 
 `.txt`, `.csv` 확장자를 지원합니다.
