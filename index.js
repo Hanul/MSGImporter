@@ -200,9 +200,9 @@ module.exports = (sourceFolderPath, saveFilePath, langs) => {
 			}
 	
 			WRITE_FILE({
-				path: path,
-				isSync: true,
-				content: content
+				path : path,
+				isSync : true,
+				content : content
 			});
 		});
 	};
