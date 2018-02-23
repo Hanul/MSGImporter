@@ -156,6 +156,7 @@ module.exports = (sourceFolderPath, saveFilePath, langs) => {
 											append += '\t'
 										}
 										append += 'en : ' + info.en.replace(/\\t/g, '\t') + ',';
+										append = append.replace(/\\\\\'/g, '\\\'');
 		
 										content = content.substring(0, i) + append + content.substring(i, length);
 		
@@ -173,7 +174,8 @@ module.exports = (sourceFolderPath, saveFilePath, langs) => {
 											for (let k = 0; k < tabCount; k += 1) {
 												append += '\t'
 											}
-											append += lang + ' : ' + info[lang].replace(/\\t/g, '\t');
+											append += (lang.indexOf('-') !== -1 ? '\'' + lang + '\'' : lang) + ' : ' + info[lang].replace(/\\t/g, '\t');
+											append = append.replace(/\\\\\'/g, '\\\'');
 			
 											content = content.substring(0, j) + append + content.substring(j, length);
 			
